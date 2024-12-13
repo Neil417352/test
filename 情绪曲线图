@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>情绪曲线</title>
+<style>
+  .chart {
+    width: 80%;
+    height: 300px;
+    border: 1px solid #ccc;
+    position: relative;
+    margin: 20px auto;
+  }
+  .line {
+      border-left: 2px solid blue;
+      position: absolute;
+      height: 300px;
+      left: 50px;
+      top: 0px;
+  }
+  .point {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: red;
+      position: absolute;
+  }
+  .label {
+      position: absolute;
+      font-size: 12px;
+      text-align: center;
+  }
+  .point1 {left: 50px; top: 100px; }
+  .point2 {left: 150px; top: 100px; }
+    .point3 {left: 300px; top: 250px;}
+    .point4 {left: 380px; top: 120px; }
+    .point5 {left: 500px; top: 10px; }
+    .point6 {left: 550px; top: 120px; }
+  .label1 {left: 20px; top: 100px;}
+  .label2 {left: 120px; top: 100px; }
+  .label3 {left: 260px; top: 260px;}
+  .label4 {left: 350px; top: 120px;}
+    .label5 {left: 470px; top: 0px;}
+      .label6 {left: 520px; top: 120px;}
+  .axis-x {
+      border-top: 1px solid #ccc;
+      position: absolute;
+      width: 100%;
+      top: 290px;
+  }
+
+  .axis-y {
+      border-right: 1px solid #ccc;
+      position: absolute;
+      height: 100%;
+      left: 50px;
+  }
+</style>
+</head>
+<body>
+
+<div class="chart">
+    <div class="line"></div>
+     <div class="axis-x"></div>
+    <div class="axis-y"></div>
+  <div class="point point1"></div>
+    <div class="label label1">开始（期待）</div>
+  <div class="point point2"></div>
+    <div class="label label2">矛盾（低谷）</div>
+  <div class="point point3"></div>
+   <div class="label label3">重生（复仇期待）</div>
+ <div class="point point4"></div>
+   <div class="label label4">反击（满足）</div>
+ <div class="point point5"></div>
+   <div class="label label5">高潮（最高点）</div>
+<div class="point point6"></div>
+    <div class="label label6">解脱新生</div>
+
+</div>
+
+<p><b>说明：</b>这条曲线表现了故事的情绪起伏：开始时相对平稳，随着矛盾的出现情绪跌入谷底，重生复仇后情绪开始上扬，最终达到高潮，并获得解脱。</p>
+
+</body>
+</html>
